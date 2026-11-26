@@ -7,6 +7,7 @@ const PORT = 3001
 
 
 app.use(express.json())
+app.use(express.static('dist'))
 
 morgan.token('postData', (req, res) => {
     console.log(req.body, "-----------------")
